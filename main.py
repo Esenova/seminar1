@@ -1,7 +1,11 @@
-from myclass import SumTwoNumbers
+from myclass import Uzbek_Plov
 
-num_1 = int(input("Please, enter the first num: "))
-num_2 = int(input("Please, enter the second num: "))
+p_type = input("Please, enter the plove type: ")
 
-cl_sum = SumTwoNumbers(num_1, num_2)
-print('Sum of two numbers is: {}'.format(cl_sum.get_sum()))
+plov = Uzbek_Plov(p_type)
+
+print(plov.plov_type + ' ' + plov.name)
+print('Рис: ', plov.rice)
+print('Мясо: ', plov.meat)
+plov.get_portion()
+plov.add_carrot()
